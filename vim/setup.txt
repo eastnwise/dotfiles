@@ -5,4 +5,4 @@ mkdir ~/.vim/.tmp
 mkdir ~/.vim/.undo
 
 ## symbolic
-ln -s ~/Git/dotfiles/vim/vimrc.vim
+ln -s ~/Git/dotfiles/vim/vimrc.vim ~/.vimrc

@@ -44,7 +44,7 @@ let g:ctrlp_switch_buffer = 0
 
 " We don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
-" let g:ctrlp_map = ',t'
+let g:ctrlp_map = ',t'
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
