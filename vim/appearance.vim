@@ -49,7 +49,7 @@ if has("gui_macvim")
 
 " Open MacVim in fullscreen mode
   set fuoptions=maxvert,maxhorz
-  au GUIEnter * set fullscreen
+  " au GUIEnter * set fullscreen
   " set guifont=Source_Code_Pro_Light:h16.00
   "
   " powerline or airline patched font
