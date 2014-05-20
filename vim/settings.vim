@@ -34,14 +34,17 @@ set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
 set hidden             " Change buffer - without saving
 set history=768        " Number of things to remember in history.
-set cf                 " Enable error files & error jumping.
+" set cf                 " Enable error files & error jumping.
 set clipboard+=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
 set timeoutlen=450     " Time to wait for a command (after leader for example).
-set nofoldenable       " Disable folding entirely.
-set foldlevelstart=99  " I really don't like folds.
-set formatoptions=crql
-set iskeyword+=\$,-   " Add extra characters that are valid parts of variables
+" set nofoldenable       " Disable folding entirely.
+set foldenable          " enable folding
+set foldlevelstart=10 " I really don't like folds.
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=indent   " fold based on indent level
+" set formatoptions=crql
+" set iskeyword+=\$,-   " Add extra characters that are valid parts of variables
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=3        " Keep three lines below the last line when scrolling
 

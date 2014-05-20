@@ -24,7 +24,7 @@ map <right> :tabn<cr>
 nmap <C-N> :NERDTreeToggle<CR>
 
 "Undotree
-nnoremap <leader>ut :UndotreeToggle<cr>
+nnoremap <leader>u :UndotreeToggle<cr>
 
 " ---------------
 " Fugitive
@@ -61,3 +61,16 @@ nnoremap <silent> ,cc :ClearCtrlPCache<cr>
 " Open the Ag command and place the cursor into the quotes
 nmap ,ag :Ag ""<Left>
 nmap ,af :AgFile ""<Left>
+
+"------------------
+"spell checker
+"------------------
+"
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+"------------------
+" folding
+"------------------
+" space open/closes folds
+nnoremap <space> za

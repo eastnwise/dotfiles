@@ -39,6 +39,8 @@ let g:ctrlp_by_filename = 1
 " several Tab workspaces and want to open two windows into the same file.
 let g:ctrlp_switch_buffer = 0
 
+let g:ctrlp_working_path=0
+
 
 " let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
 
