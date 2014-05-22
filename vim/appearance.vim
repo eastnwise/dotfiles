@@ -41,11 +41,11 @@ if has("gui_running")
     autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 endif
 
-let g:airline_powerline_fonts = 1
 
 "MacVim-specific configurations.
 if has("gui_macvim")
   set imd
+  let g:airline_powerline_fonts = 1
 
 " Open MacVim in fullscreen mode
   set fuoptions=maxvert,maxhorz

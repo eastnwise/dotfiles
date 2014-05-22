@@ -15,11 +15,10 @@ endif
 " ---------------
 set ruler          " Ruler on
 set number         " Line numbers on
-set nowrap         " Line wrapping off
+set wrap         " Line wrapping on
 set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
-set encoding=utf-8
-set noshowmode     " Don't show the mode since Powerline shows it
+" set noshowmode     " Don't show the mode since Powerline shows it
 "set showcmd " Display an incomplete command in the lower right corner of the Vim window
 set title          " Set the title of the window in the terminal to the file
 set modeline
