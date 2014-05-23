@@ -50,7 +50,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
-" Bundle 'Shougo/neocomplete'
+Bundle 'Shougo/neocomplete'
 Bundle 'rking/ag.vim'
 
 filetype plugin indent on     " required!

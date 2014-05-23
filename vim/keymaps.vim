@@ -45,7 +45,7 @@ nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 " ---------------
 " ctrl-p
 " ---------------
-nnoremap <silent> ,r :CtrlPMRU<CR>
+nnoremap <silent> ,m :CtrlPMRU<CR>
 nnoremap <silent> ,f :CtrlP<CR>
 
 " Additional mapping for buffer search
