@@ -60,10 +60,24 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " powerline
 " let g:Powerline_symbols='fancy'
-"
 
-
-
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>b'
+let g:pymode_breakpoint_cmd = ''
+let g:pymode_rope_completion = 0 
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_folding = 0
+let g:pymode_rope_guess_project = 0
+let g:pymode_virtualenv = 1
+let g:pymode_run = 1
+let g:pymode_indent = 1
+let g:pymode_lint = 1
+let g:pymode_lint_unmodified = 1
+let g:pymode_lint_checker = "pyflakes,pep8,mccabe"
+let g:pymode_lint_mccabe_complexity = 8
+let g:pymode_lint_ignore = "E501"
+let g:pymode_lint_cwindow = 1
+let g:pymode_lint_message = 1
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
@@ -129,7 +143,14 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 "let g:neocomplete#enable_auto_select = 1
 "let g:neocomplete#disable_auto_complete = 1
 "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-"
+
+" Enable omni completion.
+" autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+" autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
@@ -142,20 +163,7 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
-let g:pymode_breakpoint_cmd = ''
-let g:pymode_rope_completion = 1
-let g:pymode_rope_complete_on_dot = 1
-let g:pymode_folding = 0
-let g:pymode_rope_guess_project = 0
-let g:pymode_virtualenv = 1
-let g:pymode_run = 1
-let g:pymode_indent = 1
-let g:pymode_lint = 1
-let g:pymode_lint_unmodified = 1
-let g:pymode_lint_checker = "pyflakes,pep8,mccabe"
-let g:pymode_lint_mccabe_complexity = 8
-let g:pymode_lint_ignore = "E501"
-let g:pymode_lint_cwindow = 1
-let g:pymode_lint_message = 1
+" air-line configure
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''

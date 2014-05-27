@@ -13,6 +13,9 @@ endtry
 
 set background=dark
 
+"tell the term has 256 colors
+set t_Co=256
+
 "Keep 80 columns.
 set colorcolumn=80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -32,13 +35,14 @@ if has("gui_running")
 
     set linespace=1
 
-    "tell the term has 256 colors
-    set t_Co=256
 
     " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
     " For some reason this doesn't work as a regular set command,
     " (the numbers don't show up) so I made it a VimEnter event
     autocmd VimEnter * set guitablabel=%N:\ %t\ %M
+else
+    let g:airline_left_sep=''
+    let g:airline_right_sep=''
 endif
 
 
@@ -50,6 +54,7 @@ if has("gui_macvim")
   " set ims=-1
     
   let g:airline_powerline_fonts = 1
+  " let g:Powerline_symbols='fancy'
 
 " Open MacVim in fullscreen mode
   set fuoptions=maxvert,maxhorz
