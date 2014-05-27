@@ -13,8 +13,6 @@ endtry
 
 set background=dark
 
-"tell the term has 256 colors
-set t_Co=256
 
 "Keep 80 columns.
 set colorcolumn=80
@@ -34,6 +32,8 @@ if has("gui_running")
     set guioptions-=L  "remove left-hand scroll bar
 
     set linespace=1
+    "tell the term has 256 colors
+    set t_Co=256
 
 
     " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
