@@ -32,9 +32,9 @@ if has("gui_running")
     set guioptions-=L  "remove left-hand scroll bar
 
     set linespace=1
+
     "tell the term has 256 colors
     set t_Co=256
-
 
     " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
     " For some reason this doesn't work as a regular set command,
