@@ -74,7 +74,3 @@ map <leader>ss :setlocal spell!<cr>
 "------------------
 " space open/closes folds
 nnoremap <space> za
-
-"------------------
-" normal mode for hangul user
-"------------------

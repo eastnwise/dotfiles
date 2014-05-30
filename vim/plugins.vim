@@ -1,6 +1,6 @@
 "Virtualens
-let g:virtualenv_directory = '~/Dropbox/Dev/virtualenvs'
-let g:virtualenv_auto_activate = '1'
+" let g:virtualenv_directory = '~/Dropbox/Dev/virtualenvs'
+" let g:virtualenv_auto_activate = '1'
 "au VirtualEnvActivate pypy20
 
 "NERDTree
@@ -78,6 +78,7 @@ let g:pymode_lint_mccabe_complexity = 8
 let g:pymode_lint_ignore = "E501"
 let g:pymode_lint_cwindow = 1
 let g:pymode_lint_message = 1
+let g:pymode_python = 'python3'
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
