@@ -48,9 +48,8 @@ endif
 
 "MacVim-specific configurations.
 if has("gui_macvim")
-  " set noimd
-  set imd
-  " set imi=1
+  set noimd
+  set imi=1
   " set ims=-1
     
   let g:airline_powerline_fonts = 1

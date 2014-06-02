@@ -54,8 +54,8 @@ Bundle 'Shougo/neocomplete'
 " Bundle 'Shougo/neocomplcache'
 " Bundle 'davidhalter/jedi-vim'
 Bundle 'rking/ag.vim'
-Bundle 'xolox/vim-notes'
-Bundle 'xolox/vim-misc'
+" Bundle 'xolox/vim-notes'
+" Bundle 'xolox/vim-misc'
 
 filetype plugin indent on     " required!
 syntax on

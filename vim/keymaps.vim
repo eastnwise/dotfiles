@@ -46,10 +46,10 @@ nnoremap <Leader>gx :wincmd h<CR>:q<CR>
 " ctrl-p
 " ---------------
 nnoremap <silent> ,m :CtrlPMRU<CR>
-nnoremap <silent> ,f :CtrlP<CR>
+nnoremap <silent> ,t :CtrlP<CR>
 
 " Additional mapping for buffer search
-nnoremap <silent> ,b :CtrlPBuffer<cr>
+nnoremap <silent> ,f :CtrlPBuffer<cr>
 
 " Cmd-Shift-P to clear the cache
 nnoremap <silent> ,cc :ClearCtrlPCache<cr>
@@ -74,3 +74,8 @@ map <leader>ss :setlocal spell!<cr>
 "------------------
 " space open/closes folds
 nnoremap <space> za
+
+"hangul key
+" nnoremap <ESC> :set noimd<cr><ESC>
+" nnoremap <C-[> :set noimd<cr><C-[>
+
