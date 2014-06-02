@@ -61,7 +61,8 @@ if has("gui_macvim")
   " set guifont=Source_Code_Pro_Light:h16.00
   "
   " powerline or airline patched font
-  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
+  " set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
+  set guifont=Inconsolata\ for\ Powerline:h14
 endif
 
 if ! has('gui_running')
