@@ -48,8 +48,8 @@ endif
 
 let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
-    set t_Co=256
   let g:airline_powerline_fonts = 1
+  set t_Co=256
 elseif os == 'Linux'
 
 endif
