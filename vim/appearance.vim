@@ -45,11 +45,11 @@ else
     let g:airline_right_sep=''
 endif
 
+set t_Co=256
 
 let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
   let g:airline_powerline_fonts = 1
-  set t_Co=256
 elseif os == 'Linux'
 
 endif
