@@ -46,6 +46,14 @@ else
 endif
 
 
+let os=substitute(system('uname'), '\n', '', '')
+if os == 'Darwin' || os == 'Mac'
+    set t_Co=256
+  let g:airline_powerline_fonts = 1
+elseif os == 'Linux'
+
+endif
+
 "MacVim-specific configurations.
 if has("gui_macvim")
   set noimd
@@ -62,7 +70,7 @@ if has("gui_macvim")
   "
   " powerline or airline patched font
   " set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
-  set guifont=Inconsolata\ for\ Powerline:h14
+  set guifont=Inconsolata\ for\ Powerline:h16
 endif
 
 if ! has('gui_running')
