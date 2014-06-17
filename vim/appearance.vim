@@ -11,8 +11,9 @@ try
 catch
 endtry
 
-set background=dark
-
+" set background=dark
+" colorscheme solarized
+" let g:solarized_termcolors=256
 
 "Keep 80 columns.
 set colorcolumn=80

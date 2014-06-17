@@ -56,6 +56,11 @@ Bundle 'Shougo/neocomplete'
 Bundle 'rking/ag.vim'
 " Bundle 'xolox/vim-notes'
 " Bundle 'xolox/vim-misc'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'junegunn/goyo.vim'
+" Bundle 'amix/vim-zenroom2'
+Bundle 'reedes/vim-colors-pencil'
+Bundle 'reedes/vim-pencil'
 
 filetype plugin indent on     " required!
 syntax on

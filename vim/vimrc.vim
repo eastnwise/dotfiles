@@ -1,4 +1,4 @@
-set nocompatible               " be iMproved
+set nocompatible 
 
 source ~/Git/dotfiles/vim/bundles.vim
 source ~/Git/dotfiles/vim/settings.vim
