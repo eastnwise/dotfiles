@@ -29,30 +29,30 @@ nnoremap <leader>u :UndotreeToggle<cr>
 " ---------------
 " Fugitive
 " ---------------
-nnoremap <Leader>gc :Gcommit -v<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gp :Git push<CR>
+nnoremap <leader>gc :Gcommit -v<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gp :Git push<CR>
  " Mnemonic, gu = Git Update
-nnoremap <Leader>gu :Git pull<CR>
-nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <leader>gu :Git pull<CR>
+nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>ga :Git add --all<cr>:Gcommit<cr>
 " Exit a diff by closing the diff window
-nnoremap <Leader>gx :wincmd h<CR>:q<CR>
+nnoremap <leader>gx :wincmd h<CR>:q<CR>
 
 
 " ---------------
 " ctrl-p
 " ---------------
-nnoremap <silent> ,m :CtrlPMRU<CR>
-nnoremap <silent> ,t :CtrlP<CR>
+nnoremap <silent> <leader>m :CtrlPMRU<CR>
+nnoremap <silent> <leader>t :CtrlP<CR>
 
 " Additional mapping for buffer search
-nnoremap <silent> ,f :CtrlPBuffer<cr>
+nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 
 " Cmd-Shift-P to clear the cache
-nnoremap <silent> ,cc :ClearCtrlPCache<cr>
+nnoremap <silent> <leader>cc :ClearCtrlPCache<cr>
 
 " ---------------
 " Ag
@@ -79,3 +79,15 @@ nnoremap <space> za
 " nnoremap <ESC> :set noimd<cr><ESC>
 " nnoremap <C-[> :set noimd<cr><C-[>
 
+"------------------
+" pytest
+"------------------
+
+" Execute the tests
+nmap <leader>tf <Esc>:Pytest file<CR>
+nmap <leader>tc <Esc>:Pytest class<CR>
+nmap <leader>tm <Esc>:Pytest method<CR>
+" cycle through test errors
+nmap <leader>tn <Esc>:Pytest next<CR>
+nmap <leader>tp <Esc>:Pytest previous<CR>
+nmap <leader>te <Esc>:Pytest error<CR>

@@ -61,6 +61,7 @@ Bundle 'junegunn/goyo.vim'
 " Bundle 'amix/vim-zenroom2'
 Bundle 'reedes/vim-colors-pencil'
 Bundle 'reedes/vim-pencil'
+Bundle 'alfredodeza/pytest.vim'
 
 filetype plugin indent on     " required!
 syntax on

@@ -46,7 +46,7 @@ let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
 
 " We don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
-let g:ctrlp_map = ',t'
+let g:ctrlp_map = ',f'
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -63,7 +63,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " let g:Powerline_symbols='fancy'
 
 let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
+let g:pymode_breakpoint_bind = '<leader>bp'
 let g:pymode_breakpoint_cmd = ''
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
