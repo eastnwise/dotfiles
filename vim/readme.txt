@@ -6,3 +6,4 @@ mkdir ~/.vim/.undo
 
 ## symbolic
 ln -s ~/Git/dotfiles/vim/vimrc.vim ~/.vimrc
+ln -s ~/Git/dotfiles/vim/UltiSnips ~/.vim/UltiSnips
